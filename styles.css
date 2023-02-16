@@ -1,0 +1,161 @@
+/**
+Palette:
+Dark red #5F1A31
+Dark purple #381936
+Black #0C031C
+Blue #302C4D
+Light red #9A3E49
+Taupe #9A5E5A
+Camel #E3BE9A
+
+*/
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.hero {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-background {
+    background-image: url("images/torontoBG.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+}
+
+h1 {
+    background: #5F1A31;
+    width: 225px;
+    padding: 5px 12px 5px;
+    border-radius: 10px;
+    margin: 122px 0px 0px;
+    
+}
+
+h2 {
+    background: #9A3E49;
+    width: 355px;
+    height: 20px;
+    padding: 8px 28px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin: 20px;
+    
+}
+
+h3 {
+    font-size: 24px;
+    margin: 39px;
+    text-shadow: 0 0 1px #0C031C;
+}
+
+
+.activity-background {
+    background-image: linear-gradient(#E3BE9A, #5F1A31, #9A3E49);
+    width: 100%;
+    height: 100%;
+}
+
+.activity {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    margin-bottom: 40px;
+    
+}
+
+.activity-item {
+    width: 200px;
+    padding: 20px;
+}
+
+.activity-image {
+    border: 2px solid #381936;
+}
+
+.activity-image:hover{
+    transform: scale(3);
+    border: 4px solid #381936;
+}
+
+#guide {
+    width: 180px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.guide-card {
+    display: flex;
+    border-bottom: 5px solid #9A5E5A;
+    background: #381936;
+    padding: 23px 13px;
+    width: 400px;
+    margin: 40px auto;
+    border-radius: 10px;
+}
+
+.guide-card:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.guide-text {
+    font-style: italic;
+    width: 200px;
+    margin: auto auto;
+}
+
+@keyframes shake {
+    0% { transform:
+        translate(1px, 1px)
+        rotate(0deg); }
+    10% { transform:
+        translate(-1px, -2px)
+        rotate(-1deg); }
+    20% { transform:
+        translate(-3px, 0px)
+        rotate(1deg); }
+    30% { transform:
+        translate(3px, 2px)
+        rotate(0deg); }
+    40% { transform:
+        translate(1px, -1px)
+        rotate(1deg); }
+    50% { transform:
+        translate(-1px, 2px)
+        rotate(-1deg); }
+    60% { transform:
+        translate(-3px, 1px)
+        rotate(0deg); }
+    70% { transform:
+        translate(3px, 1px)
+        rotate(-1deg); }
+    80% { transform:
+        translate(-1px, -1px)
+        rotate(1deg); }
+    90% { transform:
+        translate(1px, 2px)
+        rotate(0deg); }
+    100% { transform:
+        translate(1px, -2px)
+        rotate(-1deg); }
+}
